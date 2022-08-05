@@ -19,14 +19,14 @@ Date Created: Aug 05 2022                                          =
 Let's test the function by supplying valid arguments as ``first_name``
 and ``second_name``.
 
->>> say_my_name("Assel", "Kebede")
-My name is Assel Kebede
+>>> say_my_name("Oduor", "Onyina")
+My name is Oduor Onyina
 
->>> say_my_name("Assel", "2022")
-My name is Assel 2022
+>>> say_my_name("Oduor", "2022")
+My name is Oduor 2022
 
->>> say_my_name("Assel 2022", "Kebede 33")
-My name is Assel 2022 Kebede 33
+>>> say_my_name("Oduor 2022", "Onyina 22")
+My name is Oduor 2022 Onyina 22
 
 Let's test the function with the second argument being optional.
 The argument ``last_name`` is optional
