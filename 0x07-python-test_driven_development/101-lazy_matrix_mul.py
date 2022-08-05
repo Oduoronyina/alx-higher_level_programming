@@ -10,8 +10,8 @@ from numpy import matmul as m
 
 
 def lazy_matrix_mul(m_a, m_b):
-        """
-            This function multiplies two matrices.
-                """
-                    return m(m_a, m_b)
-
+    """
+    This function multiplies two matrices.
+    """
+    return m(m_a, m_b)
+    

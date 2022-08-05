@@ -9,29 +9,28 @@ Date Created: Jul 30 2022
 
 
 def text_indentation(text):
-        """
-            This function  prints a text with 2 new lines after each of
-                these characters: ., ? and :
-                    """
-                        if type(text) != str:
-                                    raise TypeError("text must be a string")
+    """
+    This function  prints a text with 2 new lines after each of
+    these characters: ., ? and :
+    """
+    if type(text) != str:
+        raise TypeError("text must be a string")
 
-                                    spaces_at_start = 0
-                                        for ch in text:
-                                                    if ch != ' ':
-                                                                    break
-                                                                        spaces_at_start += 1
+    spaces_at_start = 0
+    for ch in text:
+        if ch != ' ':
+            break
+        spaces_at_start += 1
 
-                                                                            index = spaces_at_start
+    index = spaces_at_start
 
-                                                                                while index < len(text):
-                                                                                            print(text[index], end="")
-                                                                                                    if text[index] == "\n" or text[index] in ".?:":
-                                                                                                                    if text[index] in ".?:":
-                                                                                                                                        print("\n")
-                                                                                                                                                    index += 1
-                                                                                                                                                                while index < len(text) and text[index] == ' ':
-                                                                                                                                                                                    index += 1
-                                                                                                                                                                                                continue
-                                                                                                                                                                                                    index += 1
-
+    while index < len(text):
+        print(text[index], end="")
+        if text[index] == "\n" or text[index] in ".?:":
+            if text[index] in ".?:":
+                print("\n")
+            index += 1
+            while index < len(text) and text[index] == ' ':
+                index += 1
+            continue
+        index += 1
